@@ -27,14 +27,16 @@ const Veggie = () => {
 
   return (
     <Wrapper>
-      <h3>Our Vegetarian Picks</h3>
+      <h3 style={{ marginBottom: "1rem" }}>Our Vegetarian Picks</h3>
       <Splide
         options={{
-          perPage: 3,
-          arrows: false,
+          arrows: true,
           pagination: false,
           drag: "free",
-          gap: "3rem",
+          gap: "1.5rem",
+          autoWidth: true,
+          autoHeight: true,
+          autoplay: true,
         }}
       >
         {veggie.map((receipe) => {
@@ -64,6 +66,8 @@ const Card = styled.div`
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
+  min-width: 30vw;
+  max-width: 50vw;
 
   img {
     border-radius: 2rem;

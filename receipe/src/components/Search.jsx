@@ -21,6 +21,7 @@ const Search = () => {
           onChange={(e) => {
             setInput(e.target.value);
           }}
+          placeholder="Search a Receipe..."
           type="text"
           value={input}
         />

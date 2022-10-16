@@ -35,6 +35,7 @@ const Recipes = () => {
               setActiveTab("instructions");
             }}
             className={activeTab === "instructions" ? "active" : ""}
+            style={{ cursor: "pointer" }}
           >
             Instructions
           </Button>
@@ -43,6 +44,7 @@ const Recipes = () => {
               setActiveTab("ingredients");
             }}
             className={activeTab === "ingredients" ? "active" : ""}
+            style={{ cursor: "pointer" }}
           >
             Ingredients
           </Button>
